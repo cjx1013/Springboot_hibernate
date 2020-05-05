@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!--1、配置类和表对应
+        class标签
+        name:实体类的全路径
+        table:数据库表名
+    -->
+    <class name="cn.itcast.manytomany.User" table="t_user">
+        <id name="user_id" column="user_id">
+            <generator class="native"></generator>
+        </id>
+        <property name="user_name" column="user_name"/>
+        <property name="user_password" column="user_password"/>
+
+        <!--在用户里面表示所有角色-->
+        <!--set标签：
+            name:角色set集合的名称
+            table:第三张表名称
+            cascade="save-update":配置级联保存和级联删除
+         -->
+        <set name="roleSet" table="user_role" cascade="save-update,delete">
+            <!--key标签
+            column:配置当前映射文件在第三章表的外键名称
+            -->
+            <key column="userid"></key>
+            <!--many-to-many标签：
+            class:角色实体类全路径
+            column:角色在第三章表的外键名称
+            -->
+            <many-to-many class="cn.itcast.manytomany.Role" column="roleid"></many-to-many>
+        </set>
+    </class>
+
+</hibernate-mapping>

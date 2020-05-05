@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  profiles:
+    active: dev #指定加载哪个环境的配置文件
+---
+server:
+  port: 8082
+spring:
+  profiles: dev #指定属于哪个环境
+---
+server:
+  port: 8083
+
+
+spring:
+  profiles: prod

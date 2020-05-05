@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="org.junit.Test" />
+    </list>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/hibernate_day02" />
+    <file type="web" url="file://$PROJECT_DIR$/hibernate_day03" />
+    <file type="web" url="file://$PROJECT_DIR$/hibernate_day04" />
+    <file type="web" url="file://$PROJECT_DIR$/springboot_web_jsp" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/hibernate_day02/pom.xml" />
+        <option value="$PROJECT_DIR$/hibernate_day03/pom.xml" />
+        <option value="$PROJECT_DIR$/hibernate_day04/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_day01_helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_helloworld_quick/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_02_config/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_config_02/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_config_autoconfig/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_logging/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_web_restfulcrud/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_web_jsp/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_data_jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_data_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_data_jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_cache/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_amqb/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_elastic/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_task/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_security/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_provider_ticket/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_dubbo_consumer_user/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud_provider_ticket/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud_consumer_user/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud_eureka_server/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_actuator/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

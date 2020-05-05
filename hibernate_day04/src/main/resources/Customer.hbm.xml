@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!--1、配置类和表对应
+        class标签
+        name:实体类的全路径
+        table:数据库表名
+    -->
+    <class name="cn.itcast.entity.Customer" table="t_customer">
+        <!--2、配置实体类id与表id对应
+            hibernate要求实体类中有唯一属性
+            hibernate要求数据库中有唯一字段
+        -->
+        <!--
+        id标签
+        name:实体类的id
+        table:数据库的id
+        -->
+        <id name="cid" column="cid">
+            <!--设置数据库表id自动增长策略
+                native:id会为主键且自动增长
+                uuid：id为随机的并且唯一的一个字符串，要求实体类中的uid为String类型
+            -->
+            <generator class="native"></generator>
+        </id>
+        <!--配置其他属性与表字段对应
+        property标签
+        name:实体类的属性
+        table:数据库的字段
+        -->
+        <property name="custName" column="custName"/>
+        <property name="custLevel" column="custLevel"/>
+        <property name="custSource" column="custSource"/>
+        <property name="custMobile" column="custMobile"/>
+        <property name="custPhone" column="custPhone"/>
+
+        <!--在客户配置文件中，表示一对多联系人
+            使用set标签表示所有联系人
+            name：客户实体类中表示联系人的set集合名称
+            cascade="save-update,delete":级联保存，以及级联删除简化写法所需配置
+            inverse:默认为false，不放弃关系维护，为提高性能，true放弃关系维护
+        -->
+        <!--关联级别延迟配置
+            fetch：select（默认）
+            lazy：
+                true（默认）,延迟
+                false：不延迟
+                extra：极其延迟
+            -->
+        <!--batch-size="10":批量抓取配置，数值越大，发送语句越少-->
+        <set name="linkManSet" inverse="false" batch-size="10">
+            <!--一对多建表，有外键
+            hibernate机制：双向维护外键，一和多两方都配置外键
+            column：外键名称
+            -->
+
+            <key column="clid"></key>
+            <!--客户所有的联系人，class为联系人实体类的全路径-->
+            <one-to-many class="cn.itcast.entity.LinkMan"/>
+        </set>
+    </class>
+
+
+</hibernate-mapping>

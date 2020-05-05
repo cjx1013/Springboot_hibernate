@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud_provider_ticket" />
+        <module name="springboot_dubbo_consumer_user" />
+        <module name="springcloud_eureka_server" />
+        <module name="springboot_data_mybatis" />
+        <module name="hibernate_day03" />
+        <module name="hibernate_day02" />
+        <module name="springboot_actuator" />
+        <module name="springboot_logging" />
+        <module name="springboot_config_02" />
+        <module name="springboot_config_autoconfig" />
+        <module name="springboot_dubbo_provider_ticket" />
+        <module name="springboot_data_jdbc" />
+        <module name="springboot_amqp" />
+        <module name="springboot_data_jpa" />
+        <module name="springboot_task" />
+        <module name="springboot_web_restfulcrud" />
+        <module name="springboot_helloworld_quick" />
+        <module name="springboot_elastic" />
+        <module name="springboot_cache" />
+        <module name="springboot_web_jsp" />
+        <module name="springboot_02_config" />
+        <module name="springcloud_consumer_user" />
+        <module name="springboot_security" />
+        <module name="springboot_day01_helloworld" />
+        <module name="hibernate_day04" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hibernate_day02" target="1.8" />
+      <module name="hibernate_day03" target="1.8" />
+      <module name="hibernate_day04" target="1.8" />
+      <module name="provider-ticket" target="1.8" />
+      <module name="springboot_01_helloworld" target="1.8" />
+      <module name="springboot_02_config" target="1.8" />
+      <module name="springboot_actuator" target="1.8" />
+      <module name="springboot_amqp" target="1.8" />
+      <module name="springboot_cache" target="1.8" />
+      <module name="springboot_config_02" target="1.8" />
+      <module name="springboot_config_autoconfig" target="1.8" />
+      <module name="springboot_data_jdbc" target="1.8" />
+      <module name="springboot_data_jpa" target="1.8" />
+      <module name="springboot_data_mybatis" target="1.8" />
+      <module name="springboot_day01_helloworld" target="1.8" />
+      <module name="springboot_dubbo_consumer_user" target="1.8" />
+      <module name="springboot_dubbo_provider_ticket" target="1.8" />
+      <module name="springboot_elastic" target="1.8" />
+      <module name="springboot_helloworld_quick" target="1.8" />
+      <module name="springboot_logging" target="1.8" />
+      <module name="springboot_security" target="1.8" />
+      <module name="springboot_task" target="1.8" />
+      <module name="springboot_web_jsp" target="1.8" />
+      <module name="springboot_web_restfulcrud" target="1.8" />
+      <module name="springcloud_consumer_user" target="1.8" />
+      <module name="springcloud_eureka-server" target="1.8" />
+      <module name="springcloud_eureka_server" target="1.8" />
+      <module name="springcloud_provider_ticket" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="provider-ticket" options="-parameters" />
+      <module name="springboot_02_config" options="-parameters" />
+      <module name="springboot_actuator" options="-parameters" />
+      <module name="springboot_amqp" options="-parameters" />
+      <module name="springboot_cache" options="-parameters" />
+      <module name="springboot_config_02" options="-parameters" />
+      <module name="springboot_config_autoconfig" options="-parameters" />
+      <module name="springboot_data_jdbc" options="" />
+      <module name="springboot_data_jpa" options="-parameters" />
+      <module name="springboot_data_mybatis" options="-parameters" />
+      <module name="springboot_day01_helloworld" options="-parameters" />
+      <module name="springboot_dubbo_consumer_user" options="-parameters" />
+      <module name="springboot_dubbo_provider_ticket" options="-parameters" />
+      <module name="springboot_elastic" options="-parameters" />
+      <module name="springboot_helloworld_quick" options="-parameters" />
+      <module name="springboot_logging" options="-parameters" />
+      <module name="springboot_security" options="-parameters" />
+      <module name="springboot_task" options="-parameters" />
+      <module name="springboot_web_jsp" options="-parameters" />
+      <module name="springboot_web_restfulcrud" options="-parameters" />
+      <module name="springcloud_consumer_user" options="-parameters" />
+      <module name="springcloud_eureka-server" options="-parameters" />
+      <module name="springcloud_eureka_server" options="-parameters" />
+      <module name="springcloud_provider_ticket" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="hibernate_day03:war">
+    <output-path>$PROJECT_DIR$/hibernate_day03/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>hibernate_day03</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="hibernate_day03.war">
+      <element id="artifact" artifact-name="hibernate_day03:war exploded" />
+    </root>
+  </artifact>
+</component>

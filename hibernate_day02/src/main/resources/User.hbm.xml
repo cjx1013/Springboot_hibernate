@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!--1、配置类和表对应
+        class标签
+        name:实体类的全路径
+        table:数据库表名
+    -->
+    <class name="cn.itcast.manytomany.User" table="t_user">
+            <!--2、配置实体类id与表id对应
+                hibernate要求实体类中有唯一属性
+                hibernate要求数据库中有唯一字段
+            -->
+            <!--
+            id标签
+            name:实体类的id
+            table:数据库的id
+            -->
+        <id name="uid" column="uid">
+            <!--设置数据库表id自动增长策略
+                native:id会为主键且自动增长
+                uuid：id为随机的并且唯一的一个字符串，要求实体类中的uid为String类型
+            -->
+            <generator class="native"></generator>
+        </id>
+            <!--配置其他属性与表字段对应
+            property标签
+            name:实体类的属性
+            table:数据库的字段
+            -->
+        <property name="username" column="username"/>
+        <property name="password" column="password"/>
+        <property name="address" column="address"/>
+    </class>
+</hibernate-mapping>
+
